@@ -1,0 +1,91 @@
+<!-- Main Container -->
+
+<div class="container-fluid homeContainer">
+    <div class="homeContainerdiv">
+        <h1>
+            Welcome to PlatterUp API
+        </h1>
+        <br />
+        <h2>
+            Online Recipes Resourse
+        </h2>
+    </div>
+    <div class="hpbtn">
+        <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModalCenter">
+            Create a Recipe
+          </button>
+    </div>
+</div>
+
+<!-- MODAL FORM -->
+
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Create A Recipe Now!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form action='/' method="POST">
+                <div class="form-group">
+                  <label for="name">Your Name</label>
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Incredible Chef">
+                </div>
+                <div class="form-group">
+                  <label for="recipeName">Recipe Name</label>
+                  <input type="text" class="form-control" id="recipeName" name="recipeName" placeholder="Mind blowing Umami Pasta">
+                </div>
+                <div class="form-group">
+                  <label for="time">Cook Time</label>
+                  <select class="form-control" id="time" name="time">
+                    <option>30 Mins</option>
+                    <option>1 Hour</option>
+                    <option>2 Hours</option>
+                    <option>3-4 Hours</option>
+                    <option>5 + Hours</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                    <label for="ingredients">List all your ingredients here!</label>
+                    <textarea class="form-control" id="ingredients" name="ingredients" rows="3"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="animalFriendly">Animal Friendly?</label>
+                    <select class="form-control" id="animalFriendly" name="animalFriendly">
+                      <option value="false">No</option>
+                      <option value="true">Yes</option>
+                    </select>
+                  </div>
+                <div class="form-group">
+                  <label for="directions">Directions</label>
+                  <textarea class="form-control" id="directions" name="directions" rows="3"></textarea>
+                </div>
+              
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+      </div>
+    </div>
+  </div>
+<!-- Bottom Container -->
+<div class="bottomBlueContainer">
+<p> "A balanced diet is a cookie in each hand." </p>
+</div>
+<div class="container-fluid bottomContainer">
+    <div class="bottomContainerdiv">
+        <h2>
+          Cook with love and love to cook
+        </h2>
+    </div>
+    <div class="hpbtn">
+        <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModalCenter">
+            Create a Recipe
+          </button>
+    </div>
+</div>
